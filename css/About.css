@@ -115,3 +115,11 @@ header .bx-bars{
     padding:1rem 0;
     line-height: 1.5;
 }
+
+/* video */
+.back-video-2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
