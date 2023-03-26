@@ -25,4 +25,3 @@ boxes.forEach(box =>{
 
 });
 
-//how to make an Attack On Titan API?
