@@ -11,21 +11,19 @@ let availableQuesions = [];
 
 let questions = [
   {
-    question: "Inside which HTML element do we put the JavaScript??",
-    choice1: "<script>",
-    choice2: "<javascript>",
-    choice3: "<js>",
-    choice4: "<scripting>",
-    answer: 1
+    question: "What was the name of Levi's mother?",
+    choice1: "Carmen",
+    choice2: "Kuchel",
+    choice3: "Carla",
+    choice4: "Kim",
+    answer: 2
   },
   {
     question:
-      "What is the correct syntax for referring to an external script called 'xxx.js'?",
-    choice1: "<script href='xxx.js'>",
-    choice2: "<script name='xxx.js'>",
-    choice3: "<script src='xxx.js'>",
-    choice4: "<script file='xxx.js'>",
-    answer: 3
+      "Grisha killed everyone in the Reiss family except for Rod Reiss, who escaped.",
+    choice1: "True",
+    choice2: "False",
+    answer: 1
   },
   {
     question: "How do you write 'Hello World' in an alert box?",

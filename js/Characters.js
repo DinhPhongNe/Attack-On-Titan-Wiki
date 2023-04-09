@@ -2,6 +2,9 @@
 let products = {
     data: [
         {
+            h1 : "List of Characters"
+        },
+        {
             name: "Eren Jeager",
             image: "images-character/ErenJeager.png"
         },
@@ -30,79 +33,111 @@ let products = {
             image: "images-character/HangeZoe.png"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Sasha Braus",
+            image: "images-character/SashaBraus"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Zeke Jeager",
+            image: "images-character/ZekeJeager.png"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Erwin Smith",
+            image: "images-character/ErwinSmith.png"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Kenny Ackermann",
+            image: "images-character/KennyAckermann.png"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Hannes",
+            image: "images-character/Hannes.png"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Keith Sadies",
+            image: "images-character/KeithSadies.png"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Reiner Braun",
+            image: "images-character/ReinerBraun.png"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Annie Leonhart",
+            image: "images-character/AnnieLeonhart.png"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Pieck Finger",
+            image: "images-character/PieckFinger.png"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Falco Grice",
+            image: "images-character/FalcoGrice.png"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Gabi Braun",
+            image: "images-character/GabiBraun.png"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Porco Galliard",
+            image: "images-character/PorcoGalliard.png"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Bertholdt Hoover",
+            image: "images-character/BertholdtHoover.png"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Marcel Galliard",
+            image: "images-character/MarcelGalliard.png"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Lara Tybur",
+            image: "images-character/LaraTybur.png"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Willy Tybur",
+            image: "images-character/Willy Tybur.png"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Yelena",
+            image: "images-character/Yelena.png"
         },
         {
-            name: "Eren Jeager",
-            image: "images-character/ErenJeager.png"
+            name: "Onyankopon",
+            image: "images-character/Onyankopon.png"
         },
     ]
 }
+
+for (let products of products.data) {
+    let card = document.createElement("div");
+    card.classList.add("products");
+
+    let name = document.createElement("h1");
+    name.classList.add("products-name");
+
+    let box = document.createElement("box-container");
+    box.classList.add("box-container");
+
+    let img = document.createElement("div");
+    img.classList.add("image");
+    img.setAttribute("src", product.image);
+    card.appendChild(img);
+
+    let container = document.createElement("div");
+    container.classList.add("image");
+
+    let price = document.createElement("h6");
+    price.innerHTML = "<b>Price:</b>" + product.price;
+    container.appendChild(price);
+
+    let btn = document.createElement("button");
+    btn.setAttribute("onclick", `addToCart("${product.name}")`);
+    btn.innerText = " Read ";
+    container.appendChild(btn);
+
+    card.appendChild(container);
+    document.getElementById("products").appendChild(card);
+}
+
 // Get the modal element
 var modal = document.getElementById("modal");
 

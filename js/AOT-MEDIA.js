@@ -43,7 +43,7 @@ message.addEventListener('click',()=>{
 
 })
 
-// ...................THEME CUSTOMIZTION......
+// .............THEME CUSTOMIZTION......
 // ............THEME CUSTOMIZTION......
 
 const themeMenu = document.querySelector('#themeMenu');
@@ -77,3 +77,7 @@ window.addEventListener('scroll',()=>{
     themBOx.style.display= 'none'
     document.querySelector('.notification').style.display ='none'
 })
+
+// .............POST STATUS......
+// ............POST STATUS......
+const post = document.getElementById("creatPost")
