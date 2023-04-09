@@ -108,31 +108,29 @@ let products = {
 }
 
 for (let products of products.data) {
-    let card = document.createElement("div");
-    card.classList.add("products");
 
-    let name = document.createElement("h1");
-    name.classList.add("products-name");
-
-    let box = document.createElement("box-container");
-    box.classList.add("box-container");
+    let box = document.createElement("div");
+    box.classList.add("box");
 
     let img = document.createElement("div");
     img.classList.add("image");
     img.setAttribute("src", product.image);
     card.appendChild(img);
 
+    let icons = document.createElement("div");
+    icons.classList.add("icons");
+
+    let a = document.createElement("a")
+
+    let btn = document.createElement("button");
+    btn.setAttribute("onclick", `read ("${product.name}")`);
+    btn.innerText = " Read ";
+    container.appendChild(btn);
+
+
     let container = document.createElement("div");
     container.classList.add("image");
 
-    let price = document.createElement("h6");
-    price.innerHTML = "<b>Price:</b>" + product.price;
-    container.appendChild(price);
-
-    let btn = document.createElement("button");
-    btn.setAttribute("onclick", `addToCart("${product.name}")`);
-    btn.innerText = " Read ";
-    container.appendChild(btn);
 
     card.appendChild(container);
     document.getElementById("products").appendChild(card);
